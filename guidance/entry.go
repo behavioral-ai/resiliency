@@ -1,7 +1,7 @@
 package guidance
 
 import (
-	"github.com/advanced-go/common/core"
+	"github.com/behavioral-ai/core/core"
 	"time"
 )
 

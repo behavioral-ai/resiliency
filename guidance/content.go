@@ -3,7 +3,7 @@ package guidance
 import (
 	"errors"
 	"fmt"
-	"github.com/advanced-go/common/core"
+	"github.com/behavioral-ai/core/core"
 	"reflect"
 )
 

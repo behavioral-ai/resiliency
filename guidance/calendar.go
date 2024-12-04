@@ -1,7 +1,7 @@
 package guidance
 
 import (
-	"github.com/advanced-go/common/messaging"
+	"github.com/behavioral-ai/core/messaging"
 )
 
 type ProcessingCalendar struct {

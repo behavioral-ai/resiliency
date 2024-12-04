@@ -1,9 +1,9 @@
 package guidance
 
-import "github.com/advanced-go/common/core"
+import "github.com/behavioral-ai/core/core"
 
 const (
-	PkgPath    = "github/advanced-go/resiliency/guidance"
+	PkgPath    = "github/behavioral-ai/resiliency/guidance"
 	WestRegion = "us-west1"
 	WestZoneA  = "w-a"
 	WestZoneB  = "w-b"

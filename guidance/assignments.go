@@ -1,8 +1,8 @@
 package guidance
 
 import (
-	"github.com/advanced-go/common/core"
-	"github.com/advanced-go/common/messaging"
+	"github.com/behavioral-ai/core/core"
+	"github.com/behavioral-ai/core/messaging"
 )
 
 // Assignments - assignments functions struct

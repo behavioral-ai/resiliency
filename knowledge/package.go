@@ -14,3 +14,14 @@ const (
 	EastZoneA  = "e-a"
 	EastZoneB  = "e-b"
 )
+
+func Comprehend(o *Observation) *Impression {
+	i := new(Impression)
+
+	return i
+}
+
+func Reason(i *Impression) *Action {
+	a := new(Action)
+	return a
+}

@@ -15,6 +15,15 @@ const (
 	EastZoneB  = "e-b"
 )
 
+func Inference(f *Frame) {
+	if f == nil {
+		return
+	}
+	Comprehension(f)
+	Reasoning(f)
+}
+
+/*
 func Comprehend(o *Observation) *Impression {
 	i := new(Impression)
 
@@ -25,3 +34,5 @@ func Reason(i *Impression) *Action {
 	a := new(Action)
 	return a
 }
+
+*/

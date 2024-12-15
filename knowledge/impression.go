@@ -9,5 +9,5 @@ const (
 type Impression struct {
 	Saturation string
 	Gradient   string
-	Actionable bool
+	//Actionable bool
 }

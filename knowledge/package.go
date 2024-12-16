@@ -1,5 +1,11 @@
 package knowledge
 
+import (
+	"context"
+	"fmt"
+	"github.com/behavioral-ai/core/core"
+)
+
 const (
 	PkgPath    = "github/behavioral-ai/resiliency/knowledge"
 	WestRegion = "us-west1"
@@ -15,24 +21,24 @@ const (
 	EastZoneB  = "e-b"
 )
 
-func Inference(f *Frame) {
-	if f == nil {
-		return
+func AddAction(ctx context.Context, origin core.Origin, action int) *core.Status {
+	fmt.Printf("Action: %v %v\n", origin, action)
+	return core.StatusOK()
+}
+
+func AddInference(ctx context.Context, origin core.Origin, f *Frame) *core.Status {
+	if f != nil {
+		fmt.Printf("Frame: %v %v\n", origin, f.Observe)
 	}
-	Comprehension(f)
-	Reasoning(f)
+	return core.StatusOK()
 }
 
-/*
-func Comprehend(o *Observation) *Impression {
-	i := new(Impression)
-
-	return i
+func Inference(o *Observation) *Frame {
+	f := NewFrame(o)
+	//if f == nil {
+	//	return
+	//	}
+	comprehension(f)
+	reasoning(f)
+	return f
 }
-
-func Reason(i *Impression) *Action {
-	a := new(Action)
-	return a
-}
-
-*/

@@ -3,22 +3,22 @@ package knowledge
 import "fmt"
 
 func ExampleInference() {
-	f := Inference(&Observation{Latency: 100, Gradient: 5})
+	f := Inference(Observation{Latency: 100, Gradient: 5})
 	fmt.Printf("test: Inference() -> [sat:%v] [grad:%v]\n", f.Impress.Saturation, f.Impress.Gradient)
 
-	f = Inference(&Observation{Latency: 1100, Gradient: 5})
+	f = Inference(Observation{Latency: 1100, Gradient: 5})
 	fmt.Printf("test: Inference() -> [sat:%v] [grad:%v]\n", f.Impress.Saturation, f.Impress.Gradient)
 
-	f = Inference(&Observation{Latency: 1900, Gradient: 5})
+	f = Inference(Observation{Latency: 1900, Gradient: 5})
 	fmt.Printf("test: Inference() -> [sat:%v] [grad:%v]\n", f.Impress.Saturation, f.Impress.Gradient)
 
-	f = Inference(&Observation{Latency: 100, Gradient: 5})
+	f = Inference(Observation{Latency: 100, Gradient: 5})
 	fmt.Printf("test: Inference() -> [sat:%v] [grad:%v]\n", f.Impress.Saturation, f.Impress.Gradient)
 
-	f = Inference(&Observation{Latency: 100, Gradient: 9})
+	f = Inference(Observation{Latency: 100, Gradient: 9})
 	fmt.Printf("test: Inference() -> [sat:%v] [grad:%v]\n", f.Impress.Saturation, f.Impress.Gradient)
 
-	f = Inference(&Observation{Latency: 100, Gradient: 15})
+	f = Inference(Observation{Latency: 100, Gradient: 15})
 	fmt.Printf("test: Inference() -> [sat:%v] [grad:%v]\n", f.Impress.Saturation, f.Impress.Gradient)
 
 	//Output:

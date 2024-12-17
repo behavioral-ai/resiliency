@@ -12,13 +12,13 @@ type Impression struct {
 }
 
 type Frame struct {
-	Observe *Observation
+	Observe Observation
 	Impress Impression
 	Action  int
 	Stars   int
 }
 
-func NewFrame(o *Observation) *Frame {
+func NewFrame(o Observation) *Frame {
 	f := new(Frame)
 	f.Observe = o
 	return f

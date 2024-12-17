@@ -21,6 +21,10 @@ const (
 	EastZoneB  = "e-b"
 )
 
+func Observe(ctx context.Context, origin core.Origin) (Observation, *core.Status) {
+	return newObservation(), core.StatusOK()
+}
+
 func AddAction(ctx context.Context, origin core.Origin, action int) *core.Status {
 	fmt.Printf("Action: %v %v\n", origin, action)
 	return core.StatusOK()
@@ -33,7 +37,7 @@ func AddInference(ctx context.Context, origin core.Origin, f *Frame) *core.Statu
 	return core.StatusOK()
 }
 
-func Inference(o *Observation) *Frame {
+func Inference(o Observation) *Frame {
 	f := NewFrame(o)
 	//if f == nil {
 	//	return
